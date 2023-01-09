@@ -1,0 +1,35 @@
+.movieRow {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+}
+.movieRow > h2{
+  margin-left: 25px;
+}
+.movieRow_posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+.movieRow_posters::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
+}
+.single_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  border-radius: 3.5px;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+.single_poster:hover {
+  transform: scale(1.08);
+}
+.large_poster {
+  max-height: 250px;
+}
+.large_poster:hover {
+  transform: scale(1.09);
+}
